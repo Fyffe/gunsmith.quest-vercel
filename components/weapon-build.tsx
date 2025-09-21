@@ -58,7 +58,7 @@ export default function WeaponBuild ({ partId, onReady } : WeaponBuildProps) {
               const { trader, loyalty, isBarter } = item;
               const barterText = isBarter ? 'B' : '';
               const taskText = task ? ` - ${task.name}` : '';
-              return `${trader.:qname} (${loyalty}${barterText}${taskText})`;
+              return `${trader.name} (${loyalty}${barterText}${taskText})`;
             }).join(', ')}
           </CustomText>
           <CustomText className={`text-2xl text-darkGreen md:text-center my-6 ${isCompleted ? 'opacity-100' : 'opacity-0'}`}>Completed</CustomText>
